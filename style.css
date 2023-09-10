@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: "Roboto", sans-serif;
+}
+#navbar{
+    background: #f9f9f9;
+}
+#logo{
+    font-size: 35px;
+    font-weight: 550;
+    color: black;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 5px;
+}
+#logo span{
+    color: #ffa500;
+}
+.navbar-nav{
+    margin-left: 20px;
+}
+.nav-item  .nav-link{
+    font-size: 15px;
+    font-weight: 550;
+    color: black;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 0.5s ease;
+}
+.nav-item .nav-link:hover{
+    color: white;
+    background: #ffa500;
+}
+.navbar-toggler span{
+    color: #ffa500;
+}
+#navbar form button{
+    background: #ffa500;
+    color: #f9f9f9;
+    border: none;
+}
+/* HOME */
+.home{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.home .content{
+    text-align: center;
+    padding-top: 200px;
+}
+.home .content h1{
+    color: white;
+    font-size: 700;
+    font-weight: 500;
+    text-shadow: 1px 1px 1px black;
+    margin-top: 5px;
+}
+.home .content h5{
+    color: white;
+    font-size: 40px;
+    font-weight: 500;
+    text-shadow: 1px 1px 1px black;
+}
+.home .content p{
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    text-shadow: 1px 1px 1px black;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+.home .content a{
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+    background: white;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    padding: 10px;
+    transition: 1s ease;
+}
+.home .content a:hover{
+    background-color: #ffa500;
+    color: white;
+}
+.change-container::after{
+    content: "";
+    color: #ffa500;
+    text-shadow: 1px 1px 1px black;
+    animation: text-change 10s infinite linear;
+}
+@keyframes text-change{
+    0%{
+       content: "Mexico"; 
+    }
+    10%{
+        content: "Italy"; 
+    }
+    20%{
+        content: "Spain"; 
+    }
+    30%{
+        content: "China"; 
+    }
+    40%{
+        content: "India"; 
+    }
+    50%{
+        content: "United States"; 
+    }
+    60%{
+        content: "United Kingdom"; 
+    }
+    70%{
+        content: "France"; 
+    }
+    80%{
+        content: "Turkey"; 
+    }
+    90%{
+        content: "India"; 
+    }
+    100%{
+        content: "Germany"; 
+    }
+}
+@media (max-width: 850px) {
+    .home{
+        background-position: 50%;
+    }
+}
+@media (max-width: 450px) {
+    .home .content h5{
+        font-size: 20px;
+    }
+    .home .content h1{
+        font-size: 40px;
+    }
+    .home .content p{
+        font-size: 10px;
+    }
+}
+.book{
+    background-color: #f9f9f9;
+    padding: 50px;
+}
+.main-text h1{
+    text-align: center;
+    text-shadow: 1px 1px 1px black;
+    font-weight: 600;
+}
+.main-text h1 span{
+    color: #ffa500;
+}
+.book .card{
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+}
+.book .row{
+    margin-top: 30px;
+}
+.book form input{
+    padding: 10px;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+    font-size: 15px;
+}
+.book form textarea{
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+    font-size: 15px;
+    height: 200px;
+    resize: none;
+}
+.book .submit{
+    margin-top: 20px;
+    background-color: #ffa500;
+    color: white;
+    transition: 1s ease;
+    font-size: 16px;
+    font-weight: 500;
+    width: 160px;
+}
+.book .submit:hover{
+    width: 200px;
+}
+@media(max-width: 760px){
+    .book{
+        padding: 0px;
+    }
+    .book .main-text h1{
+        padding: 20px;
+    }
+}
+/* PACKAGES */
+.main-text h1{
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 600;
+    text-shadow: 1px 1px 1px black;
+}
+.packages .card{
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.packages .card img{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.packages .card .card-body{
+    background: transparent;
+}
+.packages .card .card-body h3{
+    font-weight: 700;
+    font-size: 20px;
+}
+.packages .card .card-body p{
+    font-weight: 700;
+    font-size: 15px;
+}
+.packages .card .card-body .star{
+    color: #ffa500;
+}
+.packages .card .card-body h6{
+    font-size: 20px;
+}
+.packages .card .card-body a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    background-color: #ffa500;
+    border-radius: 5px;
+}
+
+
