@@ -242,5 +242,107 @@
     background-color: #ffa500;
     border-radius: 5px;
 }
-
-
+/* Services start */
+.services{
+    margin-top: 50px;
+    background-color: #f9f9f9;
+}
+.services .card{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    cursor: pointer;
+    border: none;
+}
+.services .card i{
+    font-size: 80px;
+    text-align: center;
+    color: #ffa500;
+    margin-top: 20px;
+}
+.services .card .card-body{
+    text-align: center;
+}
+.services .card .card-body h3{
+    font-weight: 700;
+}
+/* GALLARY START */
+.gallary{
+    margin-top: 50px;
+    background-color: white;
+}
+.gallary .card{
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px;
+    cursor: pointer;
+}
+.gallary .card img{
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.gallary .card img:hover{
+    transform: scale(1.1, 1.1);
+}
+/* ABOUT START */
+.about{
+    margin-top: 50px;
+    background-color: #f9f9f9;
+    padding: 50px;
+}
+.about .card{
+    border-radius: 10px;
+}
+.about .card img{
+    border-radius: 10px;
+}
+.about .card h2{
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.about .card p{
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+#about-button{
+    background-color: #ffa500;
+    color: white;
+    font-weight: 500;
+    border-radius: 5px;
+    border: none;
+    height: 40px;
+    width: 150px;
+    transition: 0.5s ease;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+#about-button:hover{
+    width: 170px;
+}
+/* FOOTER START */
+.footer{
+    margin-top: 150px;
+    background-color: #f9f9f9;
+    padding: 50px;
+    width: 100%;
+    text-align: center;
+}
+.footer h1{
+    font-weight: 700;
+    padding-top: 30px;
+    text-shadow: rgba(0, 0, 0, 0.1);
+}
+.footer h1 span{
+    color: #ffa500;
+}
+.footer .social-links i{
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.footer .social-links i:hover{
+    background-color: #ffa500;
+}
